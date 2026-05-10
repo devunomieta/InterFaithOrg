@@ -78,7 +78,7 @@ export default function Involved() {
               <span style={{ color: 'var(--color-secondary)', fontWeight: 800, letterSpacing: '2px', textTransform: 'uppercase', fontSize: '0.8rem' }}>Honest Handling</span>
               <h2 style={{ fontSize: '2.5rem', margin: '1rem 0' }}>Where Your Help Goes</h2>
               <p style={{ color: 'var(--color-muted)', marginBottom: '2rem' }}>
-                 We follow every single government law. Every kobo sent to us goes straight to solving problems on the ground. We don't waste it.
+                 We follow every single government law. Every kobo sent to us goes straight to solving problems on the ground. We don&apos;t waste it.
               </p>
               <div className={styles.statStrip}>
                  <div>

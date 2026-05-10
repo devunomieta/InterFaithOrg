@@ -17,6 +17,15 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => { document.body.style.overflow = ''; };
+  }, [isMenuOpen]);
+
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   const closeMenu = () => setIsMenuOpen(false);
 
@@ -40,6 +49,15 @@ export default function Navbar() {
         </button>
 
         <nav className={`${styles.navList} ${isMenuOpen ? styles.menuOpen : ""}`}>
+          <div className={styles.mobileNavHeader}>
+             <Link href="/" onClick={closeMenu}>
+               <div style={{ position: 'relative', width: '50px', height: '50px', background: 'white', borderRadius: '50%', padding: '4px' }}>
+                  <Image src="/images/logo.png" alt="IMDI Logo" fill style={{ objectFit: 'contain' }} />
+               </div>
+             </Link>
+             <button className={styles.closeBtn} onClick={closeMenu} aria-label="Close menu">✕</button>
+          </div>
+
           <Link href="/" className={styles.navLink} onClick={closeMenu}>Home</Link>
           <Link href="/about" className={styles.navLink} onClick={closeMenu}>About Us</Link>
           <Link href="/work" className={styles.navLink} onClick={closeMenu}>Our Work</Link>

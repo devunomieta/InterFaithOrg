@@ -145,7 +145,7 @@ export default function Home() {
               <div className={styles.timelineContent}>
                 <h4 style={{ fontSize: '1.3rem' }}>Growing Stronger</h4>
                 <p style={{ fontSize: '1rem', color: 'var(--color-muted)', marginTop: '0.5rem', lineHeight: 1.8 }}>
-                  We created local farming groups that united youths from different religions, giving them honest work so they wouldn't turn back to fighting.
+                  We created local farming groups that united youths from different religions, giving them honest work so they wouldn&apos;t turn back to fighting.
                 </p>
               </div>
             </div>
