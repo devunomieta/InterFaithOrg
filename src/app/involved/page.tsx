@@ -90,6 +90,15 @@ export default function Involved() {
                     <p style={{ fontSize: '0.8rem', color: 'var(--color-secondary)', fontWeight: 700 }}>Hidden Costs or Fees</p>
                  </div>
               </div>
+
+              <div style={{ marginTop: '3rem', display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+                 <a href="/documents/cac.pdf" download className="btn" style={{ backgroundColor: 'var(--color-secondary)', color: 'white', fontSize: '0.8rem', display: 'flex', alignItems: 'center', gap: '8px' }}>
+                    ⬇ CAC CERTIFICATE.PDF
+                 </a>
+                 <a href="/documents/scuml.pdf" download className="btn btn-outline" style={{ fontSize: '0.8rem', display: 'flex', alignItems: 'center', gap: '8px' }}>
+                    ⬇ SCUML COMPLIANCE.PDF
+                 </a>
+              </div>
            </div>
            <div style={{ position: 'relative', height: '350px', borderRadius: '24px', overflow: 'hidden', boxShadow: 'var(--shadow-lg)' }}>
               <Image src="/images/p1.png" alt="Accountability Asset" fill sizes="(max-width: 992px) 100vw, 40vw" style={{ objectFit: 'cover' }} />

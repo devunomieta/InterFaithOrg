@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import styles from "./Layout.module.css";
 
@@ -23,8 +24,9 @@ export default function Navbar() {
     <header className={`${styles.header} ${isScrolled ? styles.scrolled : ""}`}>
       <div className={styles.navContainer}>
         <Link href="/" className={styles.logo} onClick={closeMenu}>
-          IMDI
-          <span>Global Initiative</span>
+          <div style={{ position: 'relative', width: '50px', height: '50px', background: 'white', borderRadius: '50%', padding: '4px', border: '1px solid rgba(0,0,0,0.08)', boxShadow: 'var(--shadow-sm)' }}>
+             <Image src="/images/logo.png" alt="IMDI Logo" fill style={{ objectFit: 'contain' }} />
+          </div>
         </Link>
 
         <button 

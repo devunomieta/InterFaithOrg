@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import styles from "./Layout.module.css";
 
 export default function Footer() {
@@ -9,7 +10,9 @@ export default function Footer() {
       <div className="container">
         <div className={styles.footerGrid}>
           <div className={styles.footerBrand}>
-            <h2>IMDI</h2>
+            <div style={{ position: 'relative', width: '65px', height: '65px', background: 'white', borderRadius: '50%', padding: '5px', marginBottom: '1.5rem' }}>
+               <Image src="/images/logo.png" alt="IMDI Logo" fill style={{ objectFit: 'contain' }} />
+            </div>
             <p>Peacefully United. Cultivating universal peace and prosperity from Jos to the world.</p>
             
             <div className={styles.footerNewsletter}>
@@ -36,7 +39,8 @@ export default function Footer() {
             <ul className={styles.footerLinks}>
               <li><Link href="/privacy">Privacy Policy</Link></li>
               <li><Link href="/terms">Terms of Service</Link></li>
-              <li>Registration: CAC 2024</li>
+              <li><a href="/documents/cac.pdf" download style={{ color: 'var(--color-gold)', fontWeight: 600 }}>⬇ Download CAC Cert</a></li>
+              <li><a href="/documents/scuml.pdf" download style={{ color: 'var(--color-gold)', fontWeight: 600 }}>⬇ Download SCUML Cert</a></li>
             </ul>
           </div>
 

@@ -7,10 +7,10 @@ export default function Home() {
     <>
       {/* Rich Hero Section (100vh) */}
       <section className={styles.hero}>
-        <Image 
-          src="/images/hero.png" 
-          alt="Diverse community leaders shaking hands" 
-          fill 
+        <Image
+          src="/images/hero.png"
+          alt="Diverse community leaders shaking hands"
+          fill
           priority
           sizes="100vw"
           className={styles.heroImage}
@@ -35,11 +35,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        {/* Kinetic Scroll Indication */}
-        <div className={styles.scrollIndicator}>
-           SCROLL DOWN
-           <span></span>
-        </div>
+
       </section>
 
       {/* Premium Mission Split overlay */}
@@ -82,8 +78,8 @@ export default function Home() {
               <p style={{ color: 'var(--color-gold)', fontWeight: 700, textTransform: 'uppercase', fontSize: '0.8rem', letterSpacing: '2px' }}>Thematic Areas</p>
             </div>
             <div>
-              <h2 style={{ color: 'white', fontSize: '3.5rem', fontWeight: 800, marginBottom: '0.5rem' }}>2024</h2>
-              <p style={{ color: 'var(--color-gold)', fontWeight: 700, textTransform: 'uppercase', fontSize: '0.8rem', letterSpacing: '2px' }}>Official CAC Registration</p>
+              <h2 style={{ color: 'white', fontSize: '3.5rem', fontWeight: 800, marginBottom: '0.5rem' }}>8140662</h2>
+              <p style={{ color: 'var(--color-gold)', fontWeight: 700, textTransform: 'uppercase', fontSize: '0.8rem', letterSpacing: '2px' }}>CAC Reg. Number</p>
             </div>
           </div>
         </div>
@@ -96,7 +92,7 @@ export default function Home() {
             <span>Areas of Help</span>
             <h2>What We Do Every Day</h2>
           </div>
-          
+
           <div className={styles.pillarsGrid}>
             {[
               { id: "01", title: "Fighting Poverty", desc: "Helping families start their own small business to provide food and basic home needs.", img: "/images/p1.png" },
@@ -104,11 +100,11 @@ export default function Home() {
               { id: "03", title: "Protecting Homes", desc: "Speaking out to stop fighting at home and making sure women and kids are protected.", img: "/images/p3.png" },
               { id: "04", title: "Helping the Homeless", desc: "Supporting brothers and sisters who were forced to leave their homes due to hard times.", img: "/images/p4.png" },
               { id: "05", title: "Fair Human Rights", desc: "Standing up for what is right so everyone gets a fair chance, no matter who they are.", img: "/images/p5.png" },
-              { id: "06", title: "Community Talking", desc: "Organizing simple peace talks between people of all backgrounds and faith traditions.", img: "/images/hero.png" }
+              { id: "06", title: "Community Dialogue", desc: "Organizing simple peace talks between people of all backgrounds and faith traditions.", img: "/images/hero.png" }
             ].map((item, idx) => (
               <div className={styles.pillarCard} key={idx}>
                 <div className={styles.pillarBg}>
-                   <Image src={item.img} alt={item.title} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" style={{ objectFit: 'cover' }} />
+                  <Image src={item.img} alt={item.title} fill sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" style={{ objectFit: 'cover' }} />
                 </div>
                 <div className={styles.pillarOverlay}></div>
                 <span className={styles.pillarNumber}>{item.id}</span>
@@ -158,7 +154,7 @@ export default function Home() {
               <div className={styles.timelineDot}></div>
               <span className={styles.timelineYear}>2024</span>
               <div className={styles.timelineContent}>
-                <h4 style={{ fontSize: '1.3rem' }}>Officially Registered</h4>
+                <h4 style={{ fontSize: '1.3rem' }}>Officially Registered - BN: 8140662</h4>
                 <p style={{ fontSize: '1rem', color: 'var(--color-muted)', marginTop: '0.5rem', lineHeight: 1.8 }}>
                   We passed all government requirements and became a legally registered NGO in Nigeria so we could expand and help even more people.
                 </p>
@@ -172,22 +168,22 @@ export default function Home() {
       <section className="section-padding" style={{ backgroundColor: '#fff' }}>
         <div className="container">
           <div className={styles.flexHeader}>
-             <div>
-                <span style={{ color: 'var(--color-secondary)', fontWeight: 800, letterSpacing: '2px', textTransform: 'uppercase', fontSize: '0.8rem' }}>Geographic Anchor</span>
-                <h2 style={{ fontSize: '2.8rem', marginTop: '0.5rem' }}>Operations Hub</h2>
-             </div>
-             <p style={{ color: 'var(--color-muted)', maxWidth: '450px', fontSize: '0.95rem' }}>Central directive logistics based permanently out of Tekan Headquarters in Jos, orchestrating local deployment grids.</p>
+            <div>
+              <span style={{ color: 'var(--color-secondary)', fontWeight: 800, letterSpacing: '2px', textTransform: 'uppercase', fontSize: '0.8rem' }}>Operational Base</span>
+              <h2 style={{ fontSize: '2.8rem', marginTop: '0.5rem' }}>Our Base</h2>
+            </div>
+            <p style={{ color: 'var(--color-muted)', maxWidth: '450px', fontSize: '0.95rem' }}>Our central office is located in Jos, Plateau State, Nigeria, from where we coordinate all our activities.</p>
           </div>
 
           <div className={styles.standaloneMap}>
-             <iframe 
-               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d251724.6891736355!2d8.73201062718514!3d9.869348282953675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x105373b945d3b3ef%3A0xe693ed5583c02795!2sJos!5e0!3m2!1sen!2sng!4v1700000000000!5m2!1sen!2sng" 
-               width="100%" 
-               height="100%" 
-               style={{ border:0, filter: 'grayscale(0.1) contrast(1.05)' }} 
-               allowFullScreen 
-               loading="lazy">
-             </iframe>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d251724.6891736355!2d8.73201062718514!3d9.869348282953675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x105373b945d3b3ef%3A0xe693ed5583c02795!2sJos!5e0!3m2!1sen!2sng!4v1700000000000!5m2!1sen!2sng"
+              width="100%"
+              height="100%"
+              style={{ border: 0, filter: 'grayscale(0.1) contrast(1.05)' }}
+              allowFullScreen
+              loading="lazy">
+            </iframe>
           </div>
         </div>
       </section>
@@ -196,32 +192,32 @@ export default function Home() {
       <section className="section-padding" style={{ background: 'var(--color-bg)' }}>
         <div className="container">
           <div className={styles.actionStrip}>
-             <div className={styles.actionCard} style={{ background: 'white' }}>
-                <div>
-                   <div style={{ fontSize: '2rem', marginBottom: '1rem' }}>🤝</div>
-                   <h3 style={{ fontSize: '1.5rem' }}>Strategic Partnership</h3>
-                   <p style={{ fontSize: '0.9rem', color: 'var(--color-muted)', marginTop: '0.5rem' }}>Merge structural assets and collaborative grids into our permanent peacekeeping framework.</p>
-                </div>
-                <Link href="/involved" className="btn btn-outline" style={{ width: 'fit-content', padding: '0.8rem 1.8rem', fontSize: '0.8rem', marginTop: '1.5rem' }}>Engage Now</Link>
-             </div>
+            <div className={styles.actionCard} style={{ background: 'white' }}>
+              <div>
+                <div style={{ fontSize: '2rem', marginBottom: '1rem' }}>🤝</div>
+                <h3 style={{ fontSize: '1.5rem' }}>Strategic Partnership</h3>
+                <p style={{ fontSize: '0.9rem', color: 'var(--color-muted)', marginTop: '0.5rem' }}>Join us in achieving lasting peace and stability.</p>
+              </div>
+              <Link href="/involved" className="btn btn-outline" style={{ width: 'fit-content', padding: '0.8rem 1.8rem', fontSize: '0.8rem', marginTop: '1.5rem' }}>Partner With Us</Link>
+            </div>
 
-             <div className={styles.actionCard} style={{ background: 'var(--color-primary)', color: 'white' }}>
-                <div>
-                   <div style={{ fontSize: '2rem', marginBottom: '1rem' }}>💸</div>
-                   <h3 style={{ fontSize: '1.5rem', color: 'white' }}>Immediate Pipeline Aid</h3>
-                   <p style={{ fontSize: '0.9rem', opacity: 0.8, marginTop: '0.5rem' }}>Instant mobilization of funds directly to critical IDP survival logistics and onsite camp relief.</p>
-                </div>
-                <Link href="/involved" className="btn btn-secondary" style={{ width: 'fit-content', padding: '0.8rem 1.8rem', fontSize: '0.8rem', marginTop: '1.5rem' }}>Support System</Link>
-             </div>
+            <div className={styles.actionCard} style={{ background: 'var(--color-primary)', color: 'white' }}>
+              <div>
+                <div style={{ fontSize: '2rem', marginBottom: '1rem' }}>💸</div>
+                <h3 style={{ fontSize: '1.5rem', color: 'white' }}>Support Us</h3>
+                <p style={{ fontSize: '0.9rem', opacity: 0.8, marginTop: '0.5rem' }}>Help us provide essential aid and promote peace in communities.</p>
+              </div>
+              <Link href="/involved" className="btn btn-secondary" style={{ width: 'fit-content', padding: '0.8rem 1.8rem', fontSize: '0.8rem', marginTop: '1.5rem' }}>Support Us</Link>
+            </div>
 
-             <div className={styles.actionCard} style={{ background: 'white', border: '1px solid #eee' }}>
-                <div>
-                   <div style={{ fontSize: '2rem', marginBottom: '1rem' }}>🏢</div>
-                   <h3 style={{ fontSize: '1.5rem' }}>Corporate Channels</h3>
-                   <p style={{ fontSize: '0.9rem', color: 'var(--color-muted)', marginTop: '0.5rem' }}>Interact directly with strategic administrators at Tekan Hqters via standardized channels.</p>
-                </div>
-                <Link href="/contact" className="btn btn-outline" style={{ width: 'fit-content', padding: '0.8rem 1.8rem', fontSize: '0.8rem', marginTop: '1.5rem' }}>Connect With Us</Link>
-             </div>
+            <div className={styles.actionCard} style={{ background: 'white', border: '1px solid #eee' }}>
+              <div>
+                <div style={{ fontSize: '2rem', marginBottom: '1rem' }}>🏢</div>
+                <h3 style={{ fontSize: '1.5rem' }}>Get In Touch</h3>
+                <p style={{ fontSize: '0.9rem', color: 'var(--color-muted)', marginTop: '0.5rem' }}>We’d love to hear from you. Reach out through any of our channels.</p>
+              </div>
+              <Link href="/contact" className="btn btn-outline" style={{ width: 'fit-content', padding: '0.8rem 1.8rem', fontSize: '0.8rem', marginTop: '1.5rem' }}>Contact Us</Link>
+            </div>
           </div>
         </div>
       </section>
@@ -231,28 +227,28 @@ export default function Home() {
         <div className="container">
           <div className={styles.farmingSection}>
             <div className={styles.farmingImg}>
-              <Image 
-                src="/images/farming.png" 
-                alt="Interfaith Farming Project" 
-                fill 
+              <Image
+                src="/images/farming.png"
+                alt="Interfaith Farming Project"
+                fill
                 sizes="(max-width: 992px) 100vw, 50vw"
-                style={{ objectFit: 'cover' }} 
+                style={{ objectFit: 'cover' }}
               />
             </div>
             <div className={styles.farmingContent}>
               <span style={{ color: 'var(--color-secondary)', fontWeight: 800, textTransform: 'uppercase', fontSize: '0.85rem', letterSpacing: '2px', marginBottom: '1rem', display: 'block' }}>Highlighted Initiative</span>
               <h2 style={{ fontSize: '2.8rem', lineHeight: 1.1, marginBottom: '1.5rem' }}>Peaceful Farming Work</h2>
               <p style={{ fontSize: '1.1rem', marginBottom: '2rem', color: 'var(--color-muted)' }}>
-                Helping to stop bad behavior by bringing youths from different religions to work on beautiful farms together and feed their families.
+                Helping to end violence by bringing youths from different religions to work on farms together and feed their families.
               </p>
               <ul className={styles.farmingList} style={{ listStyle: 'none', padding: 0 }}>
                 <li>
                   <span style={{ color: '#27ae60', fontSize: '1.2rem' }}>✔</span>
-                  Generates Sustainable Micro-Income
+                  Provides Sustainable Income for the youths
                 </li>
                 <li>
                   <span style={{ color: '#27ae60', fontSize: '1.2rem' }}>✔</span>
-                  Deters Inter-Community Youth Restlessness
+                  Reduces Violence Among Youths
                 </li>
                 <li>
                   <span style={{ color: '#27ae60', fontSize: '1.2rem' }}>✔</span>
@@ -260,7 +256,7 @@ export default function Home() {
                 </li>
               </ul>
               <Link href="/involved" className="btn btn-secondary" style={{ alignSelf: 'flex-start', marginTop: '1.5rem', padding: '1rem 2rem' }}>
-                Back this Project
+                Support this Project
               </Link>
             </div>
           </div>
@@ -271,8 +267,8 @@ export default function Home() {
       <section className="section-padding">
         <div className="container">
           <div className={styles.sectionHeader}>
-            <span>Steering Governance</span>
-            <h2>Trustee Spotlight</h2>
+            <span>Our Leaders</span>
+            <h2>Board of Trustees</h2>
           </div>
 
           <div className={styles.trusteeRow}>
@@ -294,7 +290,7 @@ export default function Home() {
             ))}
           </div>
           <div style={{ textAlign: 'center', marginTop: '4rem' }}>
-             <Link href="/about" className="btn btn-outline" style={{ padding: '1rem 3rem' }}>View Governance Structure</Link>
+            <Link href="/about" className="btn btn-outline" style={{ padding: '1rem 3rem' }}>View Our Leadership</Link>
           </div>
         </div>
       </section>
@@ -303,44 +299,44 @@ export default function Home() {
       <section className="section-padding" style={{ backgroundColor: '#FAFBFC' }}>
         <div className="container">
           <div className={styles.flexHeader}>
-             <div>
-                <span style={{ color: 'var(--color-secondary)', fontWeight: 800, letterSpacing: '2px', textTransform: 'uppercase', fontSize: '0.8rem' }}>Visual Impact</span>
-                <h2 style={{ fontSize: '2.8rem', marginTop: '0.5rem' }}>Recent Dispatches</h2>
-             </div>
-             <Link href="/work" style={{ fontWeight: 700, color: 'var(--color-primary)', textDecoration: 'underline', textUnderlineOffset: '4px' }}>View Full Archive →</Link>
+            <div>
+              <span style={{ color: 'var(--color-secondary)', fontWeight: 800, letterSpacing: '2px', textTransform: 'uppercase', fontSize: '0.8rem' }}>Our Projects</span>
+              <h2 style={{ fontSize: '2.8rem', marginTop: '0.5rem' }}>Real Actions</h2>
+            </div>
+            <Link href="/work" style={{ fontWeight: 700, color: 'var(--color-primary)', textDecoration: 'underline', textUnderlineOffset: '4px' }}>View Projects →</Link>
           </div>
 
           <div className={styles.galleryGrid}>
             <div className={`${styles.galleryItem} ${styles.galleryItem1}`}>
-               <Image src="/images/outreach.png" alt="Outreach" fill sizes="(max-width: 992px) 100vw, 60vw" style={{ objectFit: 'cover' }} />
-               <div className={styles.galleryCaption}>
-                  <h4 style={{ color: 'white' }}>IDP Cluster Engagement</h4>
-                  <p style={{ fontSize: '0.9rem', opacity: 0.8 }}>Direct aid dispatch during quarterly visit in Plateau state.</p>
-               </div>
+              <Image src="/images/outreach.png" alt="Outreach" fill sizes="(max-width: 992px) 100vw, 60vw" style={{ objectFit: 'cover' }} />
+              <div className={styles.galleryCaption}>
+                <h4 style={{ color: 'white' }}>IDP Cluster Engagement</h4>
+                <p style={{ fontSize: '0.9rem', opacity: 0.8 }}>Direct aid dispatch during quarterly visit in Plateau state.</p>
+              </div>
             </div>
             <div className={`${styles.galleryItem} ${styles.galleryItem2}`}>
-               <Image src="/images/hero.png" alt="Conference" fill sizes="(max-width: 992px) 100vw, 40vw" style={{ objectFit: 'cover' }} />
-               <div className={styles.galleryCaption}>
-                  <h4 style={{ color: 'white' }}>Interfaith Leadership</h4>
-                  <p style={{ fontSize: '0.9rem', opacity: 0.8 }}>Cross-denominational strategic planning summit.</p>
-               </div>
+              <Image src="/images/hero.png" alt="Conference" fill sizes="(max-width: 992px) 100vw, 40vw" style={{ objectFit: 'cover' }} />
+              <div className={styles.galleryCaption}>
+                <h4 style={{ color: 'white' }}>Interfaith Leadership</h4>
+                <p style={{ fontSize: '0.9rem', opacity: 0.8 }}>Cross-denominational strategic planning summit.</p>
+              </div>
             </div>
             <div className={`${styles.galleryItem} ${styles.galleryItem3}`}>
-               <Image src="/images/farming.png" alt="Farm" fill sizes="(max-width: 992px) 100vw, 40vw" style={{ objectFit: 'cover' }} />
-               <div className={styles.galleryCaption}>
-                  <h4 style={{ color: 'white' }}>IFP Site Activation</h4>
-                  <p style={{ fontSize: '0.9rem', opacity: 0.8 }}>Ground-breaking for self-sustaining pilot farm.</p>
-               </div>
+              <Image src="/images/farming.png" alt="Farm" fill sizes="(max-width: 992px) 100vw, 40vw" style={{ objectFit: 'cover' }} />
+              <div className={styles.galleryCaption}>
+                <h4 style={{ color: 'white' }}>IFP Site Activation</h4>
+                <p style={{ fontSize: '0.9rem', opacity: 0.8 }}>Ground-breaking for self-sustaining pilot farm.</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Global CTA */}
-      <section style={{ 
-        background: 'var(--grad-dark)', 
-        padding: '8rem 0', 
-        color: 'white', 
+      <section style={{
+        background: 'var(--grad-dark)',
+        padding: '8rem 0',
+        color: 'white',
         textAlign: 'center',
         position: 'relative',
         overflow: 'hidden'
