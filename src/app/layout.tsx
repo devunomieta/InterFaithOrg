@@ -23,6 +23,11 @@ export const metadata: Metadata = {
     template: "%s | IMDI - Interfaith Mediation Development Initiative"
   },
   description: "Registered Non-Governmental Organization (CAC BN: 8140662) uniting religious leaders and communities for sustainable peace, youth empowerment, emergency aid, and interfaith farming in Plateau State, Nigeria.",
+  icons: {
+    icon: "/images/logo.png",
+    shortcut: "/images/logo.png",
+    apple: "/images/logo.png",
+  },
   keywords: [
     "Interfaith Mediation Development Initiative",
     "IMDI",
