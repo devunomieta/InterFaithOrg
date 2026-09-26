@@ -17,7 +17,7 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://interfaithmediation.org"),
+  metadataBase: new URL("https://interfaithinitiative.org"),
   title: {
     default: "Interfaith Mediation Development Initiative (IMDI) | Peacefully United",
     template: "%s | IMDI - Interfaith Mediation Development Initiative"
@@ -55,17 +55,17 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Interfaith Mediation Development Initiative (IMDI) | Peacefully United",
     description: "Developing peace and socio-economic solutions within global communities to expand possibilities for a better life.",
-    url: "https://interfaithmediation.org",
+    url: "https://interfaithinitiative.org",
     siteName: "Interfaith Mediation Development Initiative (IMDI)",
     images: [
       {
-        url: "https://interfaithmediation.org/images/logo.png",
+        url: "https://interfaithinitiative.org/images/logo.png",
         width: 800,
         height: 800,
         alt: "IMDI Interfaith Mediation Development Initiative Logo",
       },
       {
-        url: "https://interfaithmediation.org/images/hero.png",
+        url: "https://interfaithinitiative.org/images/hero.png",
         width: 1200,
         height: 630,
         alt: "Interfaith Leaders United for Peace",
@@ -78,7 +78,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Interfaith Mediation Development Initiative (IMDI)",
     description: "Developing peace and socio-economic solutions within global communities.",
-    images: ["https://interfaithmediation.org/images/logo.png"],
+    images: ["https://interfaithinitiative.org/images/logo.png"],
   },
 };
 
@@ -92,8 +92,8 @@ export default function RootLayout({
     "@type": "NGO",
     "name": "Interfaith Mediation Development Initiative",
     "alternateName": "IMDI",
-    "url": "https://interfaithmediation.org",
-    "logo": "https://interfaithmediation.org/images/logo.png",
+    "url": "https://interfaithinitiative.org",
+    "logo": "https://interfaithinitiative.org/images/logo.png",
     "identifier": "BN: 8140662",
     "address": {
       "@type": "PostalAddress",
@@ -109,7 +109,7 @@ export default function RootLayout({
       "contactType": "General Inquiry"
     },
     "sameAs": [
-      "https://interfaithmediation.org"
+      "https://interfaithinitiative.org"
     ]
   };
 
@@ -117,13 +117,13 @@ export default function RootLayout({
     <html lang="en" className={`${playfair.variable} ${montserrat.variable}`} data-scroll-behavior="smooth">
       <head>
         {/* Explicit OpenGraph image tags for WhatsApp & Social Crawlers */}
-        <meta property="og:image" content="https://interfaithmediation.org/images/logo.png" />
-        <meta property="og:image:secure_url" content="https://interfaithmediation.org/images/logo.png" />
+        <meta property="og:image" content="https://interfaithinitiative.org/images/logo.png" />
+        <meta property="og:image:secure_url" content="https://interfaithinitiative.org/images/logo.png" />
         <meta property="og:image:type" content="image/png" />
         <meta property="og:image:width" content="512" />
         <meta property="og:image:height" content="512" />
         <meta property="og:image:alt" content="Interfaith Mediation Development Initiative Logo" />
-        <meta name="twitter:image" content="https://interfaithmediation.org/images/logo.png" />
+        <meta name="twitter:image" content="https://interfaithinitiative.org/images/logo.png" />
 
         <script
           type="application/ld+json"
