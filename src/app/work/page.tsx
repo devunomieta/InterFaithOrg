@@ -1,5 +1,11 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import styles from "@/styles/Internal.module.css";
+
+export const metadata: Metadata = {
+  title: "Our Actions & Initiatives | Peacebuilding & Relief",
+  description: "Discover active programs by IMDI: peace mediation summits, IDP relief outreach, clean water projects, and youth interfaith farming.",
+};
 
 export default function Work() {
   const activities = [

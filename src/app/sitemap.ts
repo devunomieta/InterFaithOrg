@@ -1,0 +1,44 @@
+import { MetadataRoute } from 'next';
+
+export default function sitemap(): MetadataRoute.Sitemap {
+  const baseUrl = 'https://interfaithmediation.org';
+
+  return [
+    {
+      url: `${baseUrl}`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 1.0,
+    },
+    {
+      url: `${baseUrl}/about`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/work`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/involved`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/contact`,
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/projects/plateau-peace-call`,
+      lastModified: new Date('2023-10-30'),
+      changeFrequency: 'never',
+      priority: 0.9,
+    },
+  ];
+}

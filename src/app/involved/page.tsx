@@ -1,5 +1,11 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import styles from "@/styles/Internal.module.css";
+
+export const metadata: Metadata = {
+  title: "Get Involved & Support Us | Donate & Partner",
+  description: "Partner with Interfaith Mediation Development Initiative (IMDI) or support our mission through donations, office resources, and agricultural equipment.",
+};
 
 export default function Involved() {
   const needs = [

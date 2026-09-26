@@ -72,7 +72,7 @@ export default function Navbar() {
           <div className={styles.mobileNavHeader}>
              <Link href="/" onClick={closeMenu}>
                <div style={{ position: 'relative', width: '50px', height: '50px', background: 'white', borderRadius: '50%', padding: '4px' }}>
-                  <Image src="/images/logo.png" alt="IMDI Logo" fill style={{ objectFit: 'contain' }} />
+                  <Image src="/images/logo.png" alt="IMDI Logo" fill sizes="50px" style={{ objectFit: 'contain' }} />
                </div>
              </Link>
              <button className={styles.closeBtn} onClick={closeMenu} aria-label="Close menu">✕</button>

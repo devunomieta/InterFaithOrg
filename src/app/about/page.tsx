@@ -1,5 +1,11 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import styles from "@/styles/Internal.module.css";
+
+export const metadata: Metadata = {
+  title: "About Us | Board of Trustees & Mission",
+  description: "Learn about the Interfaith Mediation Development Initiative (IMDI), our history since 2010, CAC Registration (BN: 8140662), and our dedicated Board of Trustees.",
+};
 
 const trustees = [
   { name: "RINGSUM JOHN JOSHUA", role: "BOARD OF TRUSTEE, CHAIRMAN.", img: "/images/Leaders/RINGSUM JOHN JOSHUA.jpeg" },

@@ -1,4 +1,10 @@
+import type { Metadata } from "next";
 import styles from "@/styles/Internal.module.css";
+
+export const metadata: Metadata = {
+  title: "Contact Us | Office Location & Inquiries",
+  description: "Get in touch with Interfaith Mediation Development Initiative in Jos, Plateau State, Nigeria. Contact us via email at interfaithmedevini@gmail.com or call +234 803 445 9034.",
+};
 
 export default function Contact() {
   return (

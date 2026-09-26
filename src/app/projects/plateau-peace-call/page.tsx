@@ -1,6 +1,17 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "@/styles/Internal.module.css";
+
+export const metadata: Metadata = {
+  title: "Plateau: Islamic, Christian Clerics Make Joint Call For Peace",
+  description: "Peace and Good Governance Advocates (PEGGA) commends Christian and Muslim clerics in Plateau State for their joint press briefing advocating for peace and judicial fairness.",
+  openGraph: {
+    title: "Plateau: Islamic, Christian Clerics Make Joint Call For Peace",
+    description: "Christian and Muslim clerics in Plateau State join forces to call for peace and judicial accountability.",
+    images: [{ url: "/images/Posts/P1a.jpeg", width: 1200, height: 630, alt: "Plateau Interfaith Clerics Peace Call" }],
+  }
+};
 
 export default function PlateauPeaceCallPost() {
   return (
