@@ -116,6 +116,15 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${playfair.variable} ${montserrat.variable}`} data-scroll-behavior="smooth">
       <head>
+        {/* Explicit OpenGraph image tags for WhatsApp & Social Crawlers */}
+        <meta property="og:image" content="https://interfaithmediation.org/images/logo.png" />
+        <meta property="og:image:secure_url" content="https://interfaithmediation.org/images/logo.png" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="512" />
+        <meta property="og:image:height" content="512" />
+        <meta property="og:image:alt" content="Interfaith Mediation Development Initiative Logo" />
+        <meta name="twitter:image" content="https://interfaithmediation.org/images/logo.png" />
+
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
