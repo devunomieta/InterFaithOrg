@@ -34,7 +34,7 @@ export default function Navbar() {
       <div className={styles.navContainer}>
         <Link href="/" className={styles.logo} onClick={closeMenu}>
           <div style={{ position: 'relative', width: '50px', height: '50px', background: 'white', borderRadius: '50%', padding: '4px', border: '1px solid rgba(0,0,0,0.08)', boxShadow: 'var(--shadow-sm)' }}>
-             <Image src="/images/logo.png" alt="IMDI Logo" fill style={{ objectFit: 'contain' }} />
+             <Image src="/images/logo.png" alt="IMDI Logo" fill sizes="50px" style={{ objectFit: 'contain' }} />
           </div>
         </Link>
 

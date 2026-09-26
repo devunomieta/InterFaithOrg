@@ -2,15 +2,13 @@ import Image from "next/image";
 import styles from "@/styles/Internal.module.css";
 
 const trustees = [
-  { name: "Evang. Dr. Ringsum Joshua John JP", role: "Chairman", img: "/images/t1.png" },
-  { name: "Alh. Othman Ibrahim", role: "Secretary", img: "/images/t2.png" },
-  { name: "Mark Teller Kasuwa Babuje", role: "Treasurer / Procurement", img: "/images/t3.png" },
-  { name: "Sheik Idris Sani Auwal", role: "Religious Education", img: "/images/t4.png" },
-  { name: "Whycliff Daniel Cishak", role: "Administration Secretary", img: "/images/t6.png" },
-  { name: "Haj. Aisha Yakubu Adam", role: "Welfare Secretary", img: "/images/t5.png" },
-  { name: "Alh. Ado Ismaila Shisi", role: "Research & Development", img: "/images/t2.png" },
-  { name: "Danlami Kumbet", role: "Finance / Security", img: "/images/t3.png" },
-  { name: "Late. Rev. Dr. Philip Mulbish Dafes", role: "Trustee Emeritus", img: "/images/t1.png" }
+  { name: "RINGSUM JOHN JOSHUA", role: "BOARD OF TRUSTEE, CHAIRMAN.", img: "/images/Leaders/RINGSUM JOHN JOSHUA.jpeg" },
+  { name: "ALH. IMAM OTHMAN IBRAHIM", role: "BOARD OF TRUSTEE, SECRETARY GENERAL.", img: "/images/Leaders/ALH. IMAM OTHMAN IBRAHIM.jpeg" },
+  { name: "MARKTELLER KASUWA BABUJI", role: "BOARD OF TRUSTEE, TREASURER AND PROCUREMENT", img: "/images/Leaders/MARKTELLER KASUWA BABUJI.jpeg" },
+  { name: "HAJIYA AISHA ADAMS", role: "BOARD OF TRUSTEE, ORGANISING & WELFARE SECRETARY.", img: "/images/Leaders/HAJIYA AISHA ADAMS.jpeg" },
+  { name: "WHYCLIFF DANIEL CISHAK", role: "BOARD OF TRUSTEE, PERSONNEL & PUBLICITY SECT.", img: "/images/Leaders/WHYCLIFF DANIEL CISHAK.jpeg" },
+  { name: "ALH. ADO ISMAI'LA SHIGI", role: "BOARD OF TRUSTEE, RESEARCH, DEVELOPMENT & PARTNERSHIP", img: "/images/Leaders/ALH. ADO ISMAI'LA SHIGI.jpeg" },
+  { name: "SHEIK SANI SUFI", role: "BOARD OF TRUSTEE, RELIGIOUS EDUCATION & TRAINING", img: "/images/Leaders/SHEIK SANI SUFI.jpeg" }
 ];
 
 export default function About() {

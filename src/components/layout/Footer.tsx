@@ -11,13 +11,13 @@ export default function Footer() {
         <div className={styles.footerGrid}>
           <div className={styles.footerBrand}>
             <div style={{ position: 'relative', width: '65px', height: '65px', background: 'white', borderRadius: '50%', padding: '5px', marginBottom: '1.5rem' }}>
-               <Image src="/images/logo.png" alt="IMDI Logo" fill style={{ objectFit: 'contain' }} />
+               <Image src="/images/logo.png" alt="IMDI Logo" fill sizes="65px" style={{ objectFit: 'contain' }} />
             </div>
             <p>Peacefully United. Cultivating universal peace and prosperity from Jos to the world.</p>
             
             <div className={styles.footerNewsletter}>
               <h4>Subscribe for Impact Updates</h4>
-              <div className={styles.newsletterInput}>
+              <div className={styles.newsletterInput} suppressHydrationWarning>
                 <input type="email" placeholder="Enter your email" />
                 <button type="button" className={styles.newsletterBtn}>Join</button>
               </div>

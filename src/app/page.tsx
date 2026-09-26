@@ -19,10 +19,6 @@ export default function Home() {
         <div className={styles.heroOverlay}></div>
         <div className="container">
           <div className={`${styles.heroContent} fade-up`}>
-            <div className={styles.heroBadge}>
-              <span></span>
-              IMDI: Peacefully United
-            </div>
             <h1>Building Peace, <br /> Expanding <span style={{ color: 'var(--color-gold)' }}>Possibilities.</span></h1>
             <p>
               We work with people of all faiths to help keep communities safe, provide jobs, and build a peaceful future for everyone.
@@ -273,10 +269,10 @@ export default function Home() {
 
           <div className={styles.trusteeRow}>
             {[
-              { name: "Evang. Dr. Joshua John JP", role: "Chairman", img: "/images/t1.png" },
-              { name: "Alh. Othman Ibrahim", role: "Secretary", img: "/images/t2.png" },
-              { name: "Mark Teller K. Babuje", role: "Treasurer", img: "/images/t3.png" },
-              { name: "Sheik Idris Sani Auwal", role: "Religious Ed", img: "/images/t4.png" }
+              { name: "RINGSUM JOHN JOSHUA", role: "BOARD OF TRUSTEE, CHAIRMAN.", img: "/images/Leaders/RINGSUM JOHN JOSHUA.jpeg" },
+              { name: "ALH. IMAM OTHMAN IBRAHIM", role: "BOARD OF TRUSTEE, SECRETARY GENERAL.", img: "/images/Leaders/ALH. IMAM OTHMAN IBRAHIM.jpeg" },
+              { name: "MARKTELLER KASUWA BABUJI", role: "BOARD OF TRUSTEE, TREASURER AND PROCUREMENT", img: "/images/Leaders/MARKTELLER KASUWA BABUJI.jpeg" },
+              { name: "HAJIYA AISHA ADAMS", role: "BOARD OF TRUSTEE, ORGANISING & WELFARE SECRETARY.", img: "/images/Leaders/HAJIYA AISHA ADAMS.jpeg" }
             ].map((tr, idx) => (
               <div className={styles.trusteeCard} key={idx}>
                 <div className={styles.trusteeImageLayer}>
@@ -307,27 +303,27 @@ export default function Home() {
           </div>
 
           <div className={styles.galleryGrid}>
-            <div className={`${styles.galleryItem} ${styles.galleryItem1}`}>
-              <Image src="/images/outreach.png" alt="Outreach" fill sizes="(max-width: 992px) 100vw, 60vw" style={{ objectFit: 'cover' }} />
+            <Link href="/projects/plateau-peace-call" className={`${styles.galleryItem} ${styles.galleryItem1}`}>
+              <Image src="/images/Posts/P1a.jpeg" alt="Plateau Peace Call" fill sizes="(max-width: 992px) 100vw, 60vw" style={{ objectFit: 'cover', objectPosition: 'center top' }} />
               <div className={styles.galleryCaption}>
-                <h4 style={{ color: 'white' }}>IDP Cluster Engagement</h4>
-                <p style={{ fontSize: '0.9rem', opacity: 0.8 }}>Direct aid dispatch during quarterly visit in Plateau state.</p>
+                <h4 style={{ color: 'white' }}>Plateau Peace Call</h4>
+                <p style={{ fontSize: '0.9rem', opacity: 0.8 }}>Islamic & Christian clerics joint call for peace over contradictory judgments.</p>
               </div>
-            </div>
-            <div className={`${styles.galleryItem} ${styles.galleryItem2}`}>
-              <Image src="/images/hero.png" alt="Conference" fill sizes="(max-width: 992px) 100vw, 40vw" style={{ objectFit: 'cover' }} />
+            </Link>
+            <Link href="/projects/plateau-peace-call" className={`${styles.galleryItem} ${styles.galleryItem2}`}>
+              <Image src="/images/Posts/P1b.jpeg" alt="Interfaith Press Briefing" fill sizes="(max-width: 992px) 100vw, 40vw" style={{ objectFit: 'cover', objectPosition: 'center top' }} />
               <div className={styles.galleryCaption}>
-                <h4 style={{ color: 'white' }}>Interfaith Leadership</h4>
-                <p style={{ fontSize: '0.9rem', opacity: 0.8 }}>Cross-denominational strategic planning summit.</p>
+                <h4 style={{ color: 'white' }}>Joint Press Briefing</h4>
+                <p style={{ fontSize: '0.9rem', opacity: 0.8 }}>Leaders briefing press on maintaining stability on the Plateau.</p>
               </div>
-            </div>
-            <div className={`${styles.galleryItem} ${styles.galleryItem3}`}>
-              <Image src="/images/farming.png" alt="Farm" fill sizes="(max-width: 992px) 100vw, 40vw" style={{ objectFit: 'cover' }} />
+            </Link>
+            <Link href="/projects/plateau-peace-call" className={`${styles.galleryItem} ${styles.galleryItem3}`}>
+              <Image src="/images/Posts/P1c.jpeg" alt="Clerics Assembly" fill sizes="(max-width: 992px) 100vw, 40vw" style={{ objectFit: 'cover', objectPosition: 'center top' }} />
               <div className={styles.galleryCaption}>
-                <h4 style={{ color: 'white' }}>IFP Site Activation</h4>
-                <p style={{ fontSize: '0.9rem', opacity: 0.8 }}>Ground-breaking for self-sustaining pilot farm.</p>
+                <h4 style={{ color: 'white' }}>Clerics Unity Summit</h4>
+                <p style={{ fontSize: '0.9rem', opacity: 0.8 }}>Interfaith delegation advocating for rule of law and peace.</p>
               </div>
-            </div>
+            </Link>
           </div>
         </div>
       </section>
