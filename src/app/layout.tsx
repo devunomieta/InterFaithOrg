@@ -59,7 +59,13 @@ export const metadata: Metadata = {
     siteName: "Interfaith Mediation Development Initiative (IMDI)",
     images: [
       {
-        url: "/images/hero.png",
+        url: "https://interfaithmediation.org/images/logo.png",
+        width: 800,
+        height: 800,
+        alt: "IMDI Interfaith Mediation Development Initiative Logo",
+      },
+      {
+        url: "https://interfaithmediation.org/images/hero.png",
         width: 1200,
         height: 630,
         alt: "Interfaith Leaders United for Peace",
@@ -72,7 +78,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Interfaith Mediation Development Initiative (IMDI)",
     description: "Developing peace and socio-economic solutions within global communities.",
-    images: ["/images/hero.png"],
+    images: ["https://interfaithmediation.org/images/logo.png"],
   },
 };
 
