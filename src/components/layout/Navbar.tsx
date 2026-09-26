@@ -7,12 +7,32 @@ import styles from "./Layout.module.css";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
+    let lastScrollY = window.scrollY;
+
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
+      const currentScrollY = window.scrollY;
+      
+      // Determine if scrolled past top threshold
+      setIsScrolled(currentScrollY > 60);
+
+      // Show/hide based on scroll direction
+      if (currentScrollY <= 60) {
+        setIsVisible(true);
+      } else if (currentScrollY > lastScrollY + 5) {
+        // Scrolling down -> hide navbar
+        setIsVisible(false);
+      } else if (currentScrollY < lastScrollY - 5) {
+        // Scrolling up -> reveal navbar
+        setIsVisible(true);
+      }
+
+      lastScrollY = currentScrollY;
     };
+
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -30,7 +50,7 @@ export default function Navbar() {
   const closeMenu = () => setIsMenuOpen(false);
 
   return (
-    <header className={`${styles.header} ${isScrolled ? styles.scrolled : ""}`}>
+    <header className={`${styles.header} ${isScrolled ? styles.scrolled : ""} ${(!isVisible && !isMenuOpen) ? styles.navHidden : ""}`}>
       <div className={styles.navContainer}>
         <Link href="/" className={styles.logo} onClick={closeMenu}>
           <div style={{ position: 'relative', width: '50px', height: '50px', background: 'white', borderRadius: '50%', padding: '4px', border: '1px solid rgba(0,0,0,0.08)', boxShadow: 'var(--shadow-sm)' }}>
